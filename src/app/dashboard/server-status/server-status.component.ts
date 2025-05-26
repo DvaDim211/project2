@@ -1,5 +1,5 @@
 import {Component, inject} from '@angular/core';
-import {DashboardService} from '../../shared/dashboard.service';
+import {DashboardService} from '../../shared/services/dashboard.service';
 
 @Component({
   selector: 'app-server-status',

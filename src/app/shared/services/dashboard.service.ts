@@ -1,6 +1,6 @@
 import {computed, Injectable, signal} from '@angular/core';
-import {DummyTrafficData} from './dummy-trafficdata';
-import {TrafficData} from './trafficdata.model';
+import {DummyTrafficData} from '../model/dummy-trafficdata';
+import {TrafficData} from '../model/trafficdata.model';
 
 @Injectable({providedIn: 'root'})
 export class DashboardService {
