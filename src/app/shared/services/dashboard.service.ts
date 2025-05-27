@@ -9,5 +9,9 @@ export class DashboardService {
   maxTraffic = computed(() => {
      return Math.max(...this.allTrafficData().map((data) => data.value))
   })
-  currentStatus = 'online';
+  private _currentStatusServer = signal('online') ;
+  currentStatusServer = this._currentStatusServer.asReadonly()
+  changeServerStatus (data: string) {
+    this._currentStatusServer.set(data)
+  }
 }

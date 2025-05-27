@@ -5,7 +5,10 @@ import {DashboardService} from '../../shared/services/dashboard.service';
   selector: 'app-traffic',
   imports: [],
   templateUrl: './traffic.component.html',
-  styleUrl: './traffic.component.css'
+  styleUrl: './traffic.component.css',
+  host: {
+    class: 'traffic',
+  }
 })
 export class TrafficComponent {
   private dashboardService = inject(DashboardService);
